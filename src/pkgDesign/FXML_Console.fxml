@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="paneRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkgDesign.Controller_Console">
+   <children>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: rgb(50,50,50);">
+         <top>
+            <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="900.0" style="-fx-background-color: cyan;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="40.0" fitWidth="200.0" pickOnBounds="true">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children></HBox>
+                  <HBox fx:id="paneDragBar" alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: black;">
+                     <children>
+                        <Pane fx:id="btnAbout" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="40.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <styleClass>
+                              <String fx:value="button2" />
+                              <String fx:value="bkgReducedNoRep2" />
+                              <String fx:value="classbkgAbout" />
+                           </styleClass>
+                        </Pane>
+                        <Pane fx:id="btnSettings" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#action_config" prefHeight="40.0" prefWidth="40.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <styleClass>
+                              <String fx:value="button2" />
+                              <String fx:value="classbkgSettings" />
+                              <String fx:value="bkgReducedNoRep2" />
+                           </styleClass>
+                        </Pane>
+                        <Pane fx:id="btnAccount" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="40.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <styleClass>
+                              <String fx:value="button2" />
+                              <String fx:value="bkgReducedNoRep2" />
+                              <String fx:value="classbkgAccount" />
+                           </styleClass>
+                        </Pane>
+                        <Pane fx:id="btnExit" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#action_exit" prefHeight="40.0" prefWidth="40.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <styleClass>
+                              <String fx:value="button3" />
+                              <String fx:value="bkgReducedNoRep" />
+                              <String fx:value="classbkgExit" />
+                           </styleClass>
+                        </Pane>
+                     </children>
+                  </HBox>
+               </children>
+            </StackPane>
+         </top>
+         <left>
+            <StackPane alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="140.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefHeight="200.0" prefWidth="140.0">
+                     <children>
+                        <VBox fx:id="btnFree" onMouseClicked="#action_freeAll" prefHeight="98.0" prefWidth="140.0">
+                           <children>
+                              <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="30.0" prefWidth="140.0">
+                                 <children>
+                                    <Label mouseTransparent="true" text="Welcome!" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="50.0" prefWidth="140.0">
+                                 <children>
+                                    <Label fx:id="tagAdminName" alignment="CENTER" contentDisplay="TOP" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mouseTransparent="true" prefHeight="39.0" prefWidth="140.0" text="Admin Name" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </VBox>
+                        <Pane fx:id="btnUpload" maxHeight="-Infinity" minHeight="-Infinity" onMouseClicked="#action_dispForm1" prefHeight="70.0" prefWidth="140.0" styleClass="button1">
+                           <children>
+                              <Label layoutX="48.0" layoutY="25.0" mouseTransparent="true" text="Upload" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <VBox.margin>
+                              <Insets bottom="1.0" />
+                           </VBox.margin>
+                        </Pane>
+                        <Pane fx:id="btnAdminReg" maxHeight="-Infinity" minHeight="-Infinity" onMouseClicked="#action_dispForm4" prefHeight="70.0" prefWidth="200.0" styleClass="button1">
+                           <children>
+                              <Label layoutX="28.0" layoutY="25.0" mouseTransparent="true" text="Administrator" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <VBox.margin>
+                              <Insets bottom="1.0" />
+                           </VBox.margin>
+                        </Pane>
+                        <Pane fx:id="btnStudentReg" maxHeight="-Infinity" minHeight="-Infinity" onMouseClicked="#action_dispForm3" prefHeight="70.0" prefWidth="200.0" styleClass="button1">
+                           <children>
+                              <Label layoutX="19.0" layoutY="25.0" mouseTransparent="true" text="Student Registry" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <VBox.margin>
+                              <Insets bottom="1.0" />
+                           </VBox.margin>
+                        </Pane>
+                        <Pane fx:id="btnUpdate" maxHeight="-Infinity" minHeight="-Infinity" onMouseClicked="#action_dispForm2" prefHeight="70.0" prefWidth="200.0" styleClass="button1">
+                           <children>
+                              <Label layoutX="24.0" layoutY="25.0" mouseTransparent="true" text="Search/Update" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Pane>
+                     </children>
+                  </VBox>
+               </children>
+            </StackPane>
+         </left>
+         <center>
+            <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane fx:id="paneFreeSpace" prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <VBox layoutX="525.0" layoutY="33.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="255.0" prefWidth="200.0" style="-fx-background-color: white;">
+                           <children>
+                              <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="20.0" prefWidth="400.0" styleClass="classShade1">
+                                 <children>
+                                    <Label alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="80.0" styleClass="classTitleLesser" text="Monitoring">
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="20.0" prefWidth="400.0">
+                                 <children>
+                                    <Label fx:id="tagConStatus" alignment="CENTER" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="20.0" prefWidth="400.0">
+                                 <children>
+                                    <Label maxWidth="-Infinity" minWidth="-Infinity" prefWidth="80.0" text="Manuscripts:">
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" prefHeight="33.0" prefWidth="225.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label fx:id="tagAllCount" alignment="TOP_LEFT" text="0">
+                                             <padding>
+                                                <Insets bottom="2.0" right="2.0" top="2.0" />
+                                             </padding>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </HBox>
+                              <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="200.0">
+                                 <children>
+                                    <Region maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefHeight="33.0" prefWidth="40.0" />
+                                    <Label maxWidth="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="CpE:">
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="tagCpECount" text="0">
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" right="2.0" top="2.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="200.0">
+                                 <children>
+                                    <Region maxWidth="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="40.0" />
+                                    <Label maxWidth="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="ECE:">
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="tagECECount" text="0">
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" right="2.0" top="2.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="33.0" prefWidth="200.0">
+                                 <children>
+                                    <Region maxWidth="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="40.0" />
+                                    <Label maxHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="EE:">
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="tagEECount" text="0">
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" right="2.0" top="2.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="33.0" prefWidth="200.0">
+                                 <children>
+                                    <Region maxWidth="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="40.0" />
+                                    <Label maxWidth="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="ChE:">
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="tagChECount" text="0">
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" right="2.0" top="2.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="200.0">
+                                 <children>
+                                    <Region maxWidth="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="40.0" />
+                                    <Label maxWidth="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="ME:">
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="tagMECount" text="0">
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" right="2.0" top="2.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="33.0" prefWidth="200.0">
+                                 <children>
+                                    <Region maxWidth="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="40.0" />
+                                    <Label maxWidth="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="CE:">
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="tagCECount" text="0">
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" right="2.0" top="2.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <Separator maxWidth="1.7976931348623157E308" prefWidth="200.0" />
+                              <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="20.0" prefWidth="400.0">
+                                 <children>
+                                    <Label fx:id="tagYear1" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="35.0" text="0">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label text=":" />
+                                    <Label fx:id="tagYear1Count" text="0">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="20.0" prefWidth="400.0">
+                                 <children>
+                                    <Label fx:id="tagYear2" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="35.0" text="0">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label text=":" />
+                                    <Label fx:id="tagYear2Count" text="0" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="20.0" prefWidth="400.0">
+                                 <children>
+                                    <Label fx:id="tagYear3" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="35.0" text="0">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label text=":" />
+                                    <Label fx:id="tagYear3Count" text="0" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="20.0" prefWidth="400.0" />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                        <VBox layoutX="525.0" layoutY="296.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="120.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="90.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="350.0">
+                           <children>
+                              <HBox maxHeight="-Infinity" prefHeight="20.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="Access">
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="200.0">
+                                 <children>
+                                    <Region maxWidth="-Infinity" prefHeight="200.0" prefWidth="20.0" />
+                                    <Label maxWidth="-Infinity" minWidth="-Infinity" prefWidth="80.0" text="This day:">
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="tagAccessDay" text="0">
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" right="2.0" top="2.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="200.0">
+                                 <children>
+                                    <Region maxWidth="-Infinity" prefHeight="200.0" prefWidth="20.0" />
+                                    <Label maxWidth="-Infinity" minWidth="-Infinity" prefWidth="80.0" text="This month:">
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="tagAccessMonth" text="0">
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" right="2.0" top="2.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                        <Pane fx:id="paneWorkSpace" layoutX="44.0" layoutY="34.0" maxHeight="1.7976931348623157E308" prefHeight="560.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </StackPane>
+         </center>
+      </BorderPane>
+   </children>
+   <stylesheets>
+      <URL value="@cssConsole.css" />
+      <URL value="@cssGlobal.css" />
+   </stylesheets>
+</AnchorPane>

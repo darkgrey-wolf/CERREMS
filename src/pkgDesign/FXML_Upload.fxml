@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="500.0" styleClass="bkgForm1" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkgDesign.Controller_Upload">
+   <children>
+      <GridPane fx:id="paneUpload" layoutX="177.0" layoutY="87.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="280.0" minWidth="10.0" prefWidth="253.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="239.0" minWidth="10.0" prefWidth="227.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="239.0" minWidth="10.0" prefWidth="227.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="166.0" minHeight="10.0" prefHeight="82.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="93.0" minHeight="9.0" prefHeight="93.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="143.0" minHeight="10.0" prefHeight="135.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="139.0" minHeight="10.0" prefHeight="69.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <VBox maxWidth="1.7976931348623157E308" prefHeight="77.0" prefWidth="480.0" GridPane.columnSpan="3">
+               <children>
+                  <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="30.0" prefWidth="422.0">
+                     <children>
+                        <Label prefWidth="30.0" styleClass="txt1" text="Title:" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin></Label>
+                        <TextField fx:id="txfEntryTitle" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="440.0" styleClass="txf1" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Label minWidth="-Infinity" prefWidth="30.0" styleClass="txt1" text="Year:" textFill="WHITE" />
+                        <Label alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="10.0" text="-" />
+                        <TextField fx:id="txfSYEnd" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="60.0" styleClass="txf1" />
+                        <ComboBox fx:id="cmbProgram" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="179.0" promptText="Choose Program">
+                           <HBox.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </HBox.margin>
+                           <styleClass>
+                              <String fx:value="cmp1" />
+                              <String fx:value="handCursor" />
+                              <String fx:value="btnGen" />
+                           </styleClass>
+                        </ComboBox>
+                        <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                        <Pane fx:id="btnFileChoose" maxHeight="1.7976931348623157E308" minWidth="-Infinity" onMouseClicked="#action_fileChoose" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label layoutX="20.0" layoutY="6.0" mouseTransparent="true" styleClass="txt1" text="Choose File" textFill="WHITE" />
+                           </children>
+                           <styleClass>
+                              <String fx:value="handCursor" />
+                              <String fx:value="btnFileChoose" />
+                              <String fx:value="classBtnBlue" />
+                           </styleClass>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="tagFileName" maxWidth="1.7976931348623157E308" prefWidth="400.0" styleClass="txt1" text="File Loaded: " textFill="WHITE" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+               <children>
+                  <Label styleClass="txt1" text="Authors:" textFill="WHITE" />
+                  <Button fx:id="btnAuthorAdd" mnemonicParsing="false" onMouseClicked="#action_addAuthor" text="Add">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <styleClass>
+                        <String fx:value="cmp1" />
+                        <String fx:value="handCursor" />
+                        <String fx:value="btnGen" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="btnAuthorRem" mnemonicParsing="false" onMouseClicked="#action_removeAuthor" text="Remove Selected">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <styleClass>
+                        <String fx:value="cmp1" />
+                        <String fx:value="handCursor" />
+                        <String fx:value="btnGen" />
+                     </styleClass>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="250.0" prefWidth="100.0" GridPane.columnSpan="3" GridPane.rowIndex="2" GridPane.rowSpan="2">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Label styleClass="txt1" text="Abstract" textFill="WHITE" />
+                     </children>
+                  </HBox>
+                  <TextArea fx:id="txaAbstract" maxHeight="1.7976931348623157E308" prefHeight="200.0" prefWidth="480.0" styleClass="txf1" wrapText="true" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnSpan="2" GridPane.rowIndex="4">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="20.0" prefWidth="328.0">
+                     <children>
+                        <Label styleClass="txt1" text="Keywords" textFill="WHITE" />
+                     </children>
+                  </HBox>
+                  <TextArea fx:id="txaKeyWords" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" promptText="Each keyword is separated with semicolon. Example: Keyword1;Keyword2;Keyword3;" styleClass="txf1" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <children>
+                  <Region prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                  <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="40.0" prefWidth="152.0">
+                     <children>
+                        <Pane fx:id="btnCancel" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minWidth="-Infinity" onMouseClicked="#action_cancel" prefHeight="200.0" prefWidth="50.0">
+                           <children>
+                              <Label layoutX="7.0" layoutY="12.0" mouseTransparent="true" styleClass="txt1" text="Cancel" textFill="WHITE" />
+                           </children>
+                           <styleClass>
+                              <String fx:value="handCursor" />
+                              <String fx:value="btnCancel" />
+                              <String fx:value="classBtnRed" />
+                           </styleClass></Pane>
+                        <Pane fx:id="btnSubmit" maxHeight="1.7976931348623157E308" onMouseClicked="#action_submit" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label layoutX="32.0" layoutY="12.0" mouseTransparent="true" styleClass="txt1" text="Submit" textFill="WHITE" />
+                           </children>
+                           <styleClass>
+                              <String fx:value="handCursor" />
+                              <String fx:value="btnSubmit" />
+                              <String fx:value="classBtnBlue" />
+                           </styleClass></Pane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <ListView fx:id="listViewAuthors" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1">
+               <styleClass>
+                  <String fx:value="txt1" />
+                  <String fx:value="handCursor" />
+               </styleClass>
+            </ListView>
+         </children>
+      </GridPane>
+   </children>
+   <stylesheets>
+      <URL value="@cssUpload.css" />
+      <URL value="@cssGlobal.css" />
+   </stylesheets>
+</AnchorPane>

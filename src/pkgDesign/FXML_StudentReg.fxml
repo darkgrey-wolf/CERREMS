@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="500.0" style="-fx-background-color: rgb(50,50,50);" stylesheets="@cssGlobal.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkgDesign.Controller_StdReg">
+   <children>
+      <VBox layoutX="200.0" layoutY="180.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <HBox alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <Label text="STUDENT REGISTER">
+                     <styleClass>
+                        <String fx:value="classTitleLesser" />
+                        <String fx:value="txtLight" />
+                     </styleClass></Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Label styleClass="txtLight" text="ID:">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txfID" maxHeight="1.7976931348623157E308" styleClass="classTextField" HBox.hgrow="ALWAYS" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Label styleClass="txtLight" text="Last Name:">
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="txfNameLast" maxHeight="1.7976931348623157E308" styleClass="classTextField" HBox.hgrow="ALWAYS" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Label styleClass="txtLight" text="First name: ">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txfNameFirst" maxHeight="1.7976931348623157E308" styleClass="classTextField" HBox.hgrow="ALWAYS" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Label styleClass="txtLight" text="Middle Initial:">
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="txfMI" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0" styleClass="classTextField" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="txfRFID" editable="false" maxHeight="1.7976931348623157E308" promptText="RFID: Please scan the card" styleClass="classTextField" HBox.hgrow="ALWAYS" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <Region prefHeight="200.0" prefWidth="200.0" />
+            <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Pane fx:id="btnCancel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#action_Cancel" prefHeight="50.0" prefWidth="100.0">
+                     <styleClass>
+                        <String fx:value="btnHand" />
+                        <String fx:value="classBtnRed" />
+                     </styleClass>
+                     <children>
+                        <Label layoutX="32.0" layoutY="17.0" mouseTransparent="true" styleClass="txtLight" text="Cancel" />
+                     </children></Pane>
+                  <Pane fx:id="btnReg" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#action_Reg" prefHeight="50.0" prefWidth="100.0">
+                     <styleClass>
+                        <String fx:value="btnHand" />
+                        <String fx:value="classBtnBlue" />
+                     </styleClass>
+                     <children>
+                        <Label layoutX="28.0" layoutY="17.0" mouseTransparent="true" styleClass="txtLight" text="Register" />
+                     </children></Pane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

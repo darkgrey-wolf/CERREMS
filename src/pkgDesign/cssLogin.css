@@ -1,0 +1,36 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 18, 2018, 11:23:16 AM
+    Author     : GreyWolf
+*/
+.bkgLogin {
+    -fx-background-color: rgb(20,120,50);
+}
+.bkgLogin:hover {
+    -fx-background-color: rgb(20,160,50);
+}
+.bkgCancel {
+    -fx-background-color: rgb(160,20,20);
+}
+.bkgCancel:hover {
+    -fx-background-color: rgb(200,20,20);
+}
+.bkgSettings {
+    -fx-background-color: rgb(95,95,95);
+    -fx-background-image: url("/pkgIcon/iconSettings.png");
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100% 100%;
+}
+.bkgSettings:hover {
+    -fx-background-color: rgb(115,115,115);
+    
+}
+.classBkgRaven {
+    -fx-background-image: url("/pkgIcon/iconraven.png");
+    -fx-background-size: 100% 100%;
+}

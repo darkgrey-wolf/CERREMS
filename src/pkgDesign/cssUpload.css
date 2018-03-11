@@ -1,0 +1,53 @@
+/* 
+    Created on : Feb 8, 2018, 6:03:53 PM
+    Author     : Grey_Wolf
+*/
+.bkgForm1 {
+    -fx-background-color: rgb(50,50,50);
+}
+.txf1 {
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: white;
+    -fx-cursor: text;
+}
+.cmp1 {
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: white;
+}
+.handCursor {
+    -fx-cursor: hand;
+}
+.btnCancel {
+    -fx-background-color: rgb(180,40,40);
+}
+.btnCancel:hover {
+    -fx-background-color: rgb(250,60,60);
+}
+.btnSubmit {
+    -fx-background-color: rgb(40,180,40);
+}
+.btnSubmit:hover {
+    -fx-background-color: rgb(60,250,60);  
+    
+}
+.btnFileChoose {
+    -fx-background-color: rgb(40,40,180);
+}
+.btnFileChoose:hover {
+    -fx-background-color: rgb(60,60,250);
+}
+.btnGen {
+    -fx-background-color: rgb(200,200,200);
+}
+.btnGen:hover {
+    -fx-background-color: rgb(180,180,220);
+}
+.btnGen:pressed {
+    -fx-background-color: rgb(220,220,220);
+}
+.txt1 {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}

@@ -1,0 +1,10 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color: rgb(50,50,50);
+}
+.classDashBoard {
+    -fx-background-color: white;
+}

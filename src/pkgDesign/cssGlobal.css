@@ -1,0 +1,50 @@
+/* 
+    Created on : Feb 18, 2018, 11:25:30 AM
+    Author     : GreyWolf
+*/
+.btnHand {
+    -fx-cursor: hand;
+}
+.txtLight {
+    -fx-text-fill: white;
+}
+.classTitleLesser {
+    -fx-font-weight: bold;
+}
+.classTitleGreater {
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+}
+.classBtnBlue {
+    -fx-background-color: rgb(65,145,160);
+}
+.classBtnBlue:hover {
+    -fx-background-color: rgb(65,155,255);
+}
+.classBtnBlue:pressed {
+    -fx-background-color: rgb(165,245,255);
+}
+.classBtnRed {
+    -fx-background-color: rgb(190,75,65);
+}
+.classBtnRed:hover {
+    -fx-background-color: rgb(255,75,65);
+}
+.classBtnRed:pressed {
+    -fx-background-color: rgb(255,175,165);
+}
+.classTextField {
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: white;
+    -fx-border-color: white;
+    -fx-cursor: text;
+}
+.classBkgLight {
+    -fx-background-color: rgb(210,210,230);
+}
+.classBorder {
+    -fx-border-color: black;
+    -fx-border-width: 5;
+    -fx-border-style: solid;
+}

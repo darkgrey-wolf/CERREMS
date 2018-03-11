@@ -1,0 +1,14 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.bkgConf {
+    -fx-background-color: rgb(50,50,50);
+}
+.classBkg1 {
+    -fx-border-color: rgb(20,20,20);
+    -fx-border-width: 4px;
+}

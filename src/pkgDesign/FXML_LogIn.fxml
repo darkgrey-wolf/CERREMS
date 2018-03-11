@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" fx:id="paneSpace" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="700.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkgDesign.Controller_LogIn">
+   <children>
+      <Pane fx:id="paneDrag1" layoutX="58.0" layoutY="63.0" prefHeight="200.0" prefWidth="200.0" styleClass="classBkgRaven" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="0.0" />
+      <Pane fx:id="paneDrag2" layoutX="400.0" layoutY="8.0" prefHeight="81.0" prefWidth="200.0" AnchorPane.bottomAnchor="300.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane fx:id="paneDrag3" layoutX="400.0" layoutY="308.0" prefHeight="85.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="300.0" />
+      <VBox layoutX="250.0" layoutY="100.0" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: gray;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <Label styleClass="txtLight" text="WELCOME!" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="40.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <TextField fx:id="txfName" promptText="Administrator Name" styleClass="classTextField" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="40.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <PasswordField fx:id="txfPassword" promptText="Password" styleClass="classTextField" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <Region prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+            <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Pane fx:id="btnSettings" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#action_setting" prefHeight="50.0" prefWidth="50.0">
+                     <styleClass>
+                        <String fx:value="btnHand" />
+                        <String fx:value="bkgSettings" />
+                     </styleClass>
+                  </Pane>
+                  <Pane fx:id="btnCancel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#action_cancel" prefHeight="50.0" prefWidth="50.0">
+                     <styleClass>
+                        <String fx:value="btnHand" />
+                        <String fx:value="bkgCancel" />
+                        <String fx:value="classBtnRed" />
+                     </styleClass>
+                     <children>
+                        <Label layoutX="7.0" layoutY="17.0" mouseTransparent="true" styleClass="txtLight" text="Cancel" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="btnLogin" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#action_login" prefHeight="50.0" prefWidth="100.0">
+                     <styleClass>
+                        <String fx:value="btnHand" />
+                        <String fx:value="bkgLogin" />
+                        <String fx:value="classBtnBlue" />
+                     </styleClass>
+                     <children>
+                        <Label layoutX="36.0" layoutY="17.0" mouseTransparent="true" styleClass="txtLight" text="Login" />
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+   <stylesheets>
+      <URL value="@cssLogin.css" />
+      <URL value="@cssGlobal.css" />
+   </stylesheets>
+</AnchorPane>

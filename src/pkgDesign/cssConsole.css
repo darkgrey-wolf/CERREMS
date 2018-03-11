@@ -1,0 +1,54 @@
+/* 
+    Created on : Feb 8, 2018, 8:46:40 AM
+    Author     : Grey_Wolf
+*/
+.button1 {
+    -fx-background-color: rgb(50,50,150);
+}
+.button1:hover {
+    -fx-background-color: rgb(75,75,250);
+}
+.button2 {
+    -fx-background-color: rgb(75,75,75);
+}
+.button2:hover {
+    -fx-background-color: rgb(75,150,220);
+}
+.button2:pressed {
+    -fx-background-color: rgb(255,255,255);
+}
+.button3 {
+    -fx-background-color: rgb(55,50,50);
+}
+.button3:hover {
+    -fx-background-color: rgb(175,50,50);
+}
+.classbkgExit {
+    -fx-background-image: url("/pkgIcon/iconExit.png");
+}
+
+.classbkgAbout {
+    -fx-background-image: url("/pkgIcon/iconQuestion.png");
+}
+.classbkgSettings {
+    -fx-background-image: url("/pkgIcon/iconSettings.png");
+}
+.classbkgAccount {
+    -fx-background-image: url("/pkgIcon/iconInfo.png");
+}
+.bkgReducedNoRep {
+    -fx-background-size: 50% 50%;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+.bkgReducedNoRep2 {
+    -fx-background-size: 90% 90%;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+.classShade1{
+    -fx-background-color: rgb(240,240,245);
+}
+.classShade2 {
+    -fx-background-color: rgb(240,245,240);
+}
